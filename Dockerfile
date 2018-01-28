@@ -20,5 +20,6 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
 # Install additional packages
 RUN apt-get --yes update && \
     apt-get --yes upgrade && \
-    apt-get --yes install texlive texlive-latex-recommended  texlive-latex-extra
+    apt-get --yes install texlive texlive-latex-recommended texlive-latex-extra && \
+    apt-get --yes install git ssh
 
